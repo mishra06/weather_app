@@ -62,7 +62,7 @@ const WeatherApp = () => {
 
       {weatherData && (
         <div className="weather-info">
-          <div>
+          <div className='weather-info-upper'>
             <h2>Current Weather</h2>
           </div>
           <div className='inner_weather-info'>
@@ -73,7 +73,7 @@ const WeatherApp = () => {
           </div> 
         </div>
       )}
-      <div>
+      <div className='forcast_header'>
         <h2>5-Day Forecast</h2>
       </div>
 

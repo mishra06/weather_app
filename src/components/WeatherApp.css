@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Playwrite+NL:wght@100..400&display=swap');
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,7 +10,8 @@ body {
   h1 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: "Playwrite IS", cursive;
   }
   
   .weather-app{
@@ -50,6 +53,8 @@ body {
     flex-direction: column;
     /* border: 1px solid red; */
     border-radius: 15px;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
   }
 
   .weather-info{
@@ -61,30 +66,48 @@ body {
     align-items: center;
   }
 
+  .weather-info-upper > h2{
+    font-family: "Playwrite NL", cursive;
+    color: black;
+  }
+
   .inner_weather-info{
-    text-align: center; 
+    text-align: center;
+    font-family: "Playwrite NL", cursive;
+    font-size: 12px;
   }
 
   .forecast-info{
     display: flex;
     height: 20vh;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
+  
 
   .forecast-item{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    background-color: #808862;
+    /* border: 1px solid red; */
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
     gap: 0px;
+    font-family: "Playwrite NL", cursive;
+    font-size: 10px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .forcast_header{
+    font-family: "Playwrite NL", cursive;
+    color: rgb(94, 81, 241);
   }
   
   .weather-info h2,
@@ -94,6 +117,5 @@ body {
   
   .weather-info p,
   .forecast-info p {
-    margin: 5px 0;
-    font-size: 1.1rem;
+    margin: 0px 0;
   }
