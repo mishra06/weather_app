@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Display from '../components/Display'
+import WeatherApp from '../components/WeatherApp'
+
 
 const Dashboard = () => {
   return (
-    <div>
-      <Navbar/>
-      <Display/>
+    <div style={{display:'flex',flexDirection:"column", overflow:"hidden"}}>
+      <div style={{width:"100%" , height:"10vh"}}><Navbar/></div>
+      <div style={{width:"100%" , height:"90vh"}}><WeatherApp/></div>
     </div>
   )
 }
