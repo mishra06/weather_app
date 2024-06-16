@@ -89,7 +89,7 @@ const WeatherApp = () => {
         <div className="weather-info">
           <div className='weather-info-upper'>
             <h2>Current Weather</h2>
-            <button onClick={addToFavorites}>❤️</button>
+            <span onClick={addToFavorites}>❤️</span>
           </div>
           <div className='inner_weather-info'>
             <p>City: {weatherData.name}</p>
