@@ -12,7 +12,7 @@ const Navbar = () => {
           </div>
           <div className="left_sec_pages">
             <span><NavLink to="/home">Home</NavLink></span>
-            <span><NavLink to="/fav">Favourite</NavLink></span>
+             <span><NavLink to="/fav">Current</NavLink></span>
           </div>
       </div>
     </div>

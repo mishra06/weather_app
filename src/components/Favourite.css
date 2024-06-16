@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Fav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.Fav_cont{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fav-info-upper{
+    text-align: center;
+    margin: 1rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-family: 'Playwrite NL', cursive;
+    color: black;
+}
+
+.Fav_info_lower{
+    font-size: 18px !important;
+    border-radius: 15px;
+    background-color: black;
+    height: 70vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

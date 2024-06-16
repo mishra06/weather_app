@@ -100,7 +100,7 @@ const WeatherApp = () => {
         </div>
       )}
       <div className='forcast_header'>
-        <h2>5-Day Forecast</h2>
+        <h2 className='h222'>5-Day Forecast</h2>
       </div>
 
       {forecast && (

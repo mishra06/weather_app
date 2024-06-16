@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+// import WeatherApp from '../components/WeatherApp'
+import { Outlet } from 'react-router-dom'
 import WeatherApp from '../components/WeatherApp'
 
 
