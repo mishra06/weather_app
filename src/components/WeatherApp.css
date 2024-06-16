@@ -81,7 +81,8 @@ body {
     display: flex;
     height: 20vh;
     width: 90%;
-    justify-content: space-between; 
+    justify-content: space-between;
+    /* overflow-x: scroll; */
   }
 
   
@@ -103,6 +104,8 @@ body {
     font-size: 10px;
     color: black;
     font-weight: 600;
+   
+    
   }
 
   .forcast_header{

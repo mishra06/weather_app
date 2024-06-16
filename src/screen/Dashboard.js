@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div style={{display:'flex',flexDirection:"column", overflow:"hidden"}}>
       <div style={{width:"100%" , height:"10vh"}}><Navbar/></div>
-      <div style={{width:"100%" , height:"90vh"}}><WeatherApp/></div>
+      <div style={{width:"100%" , height:"150vh"}}><WeatherApp/></div>
     </div>
   )
 }
