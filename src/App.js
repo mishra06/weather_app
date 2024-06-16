@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Routes,BrowserRouter,Route } from 'react-router-dom';
-import Favrouts from './components/Favrouts';
+import Favourite from './components/Favourite';
 import Dashboard from './screen/Dashboard';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Dashboard/>}/>
         <Route path='/home' element={<Dashboard/>}/>
-        <Route path='fav' element={<Favrouts/>}/>
+        <Route path='fav' element={<Favourite/>}/>
       </Routes>
     </BrowserRouter>
   );

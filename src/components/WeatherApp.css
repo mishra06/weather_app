@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -25,7 +26,7 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    height: 100%;
+    height: auto;
   }
   
   input[type="text"] {
@@ -53,7 +54,7 @@ body {
     flex-direction: column;
     /* border: 1px solid red; */
     border-radius: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: -1rem;
   }
 
@@ -79,10 +80,16 @@ body {
 
   .forecast-info{
     display: flex;
-    height: 20vh;
+    height: 25vh;
     width: 90%;
     justify-content: space-between;
-    /* overflow-x: scroll; */
+    overflow-x: auto;
+    gap: 1rem;
+    overflow-y: hidden;
+  }
+
+  .forecast-info::-webkit-scrollbar{
+    width: 0;
   }
 
   
@@ -100,17 +107,19 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
     gap: 0px;
-    font-family: "Playwrite NL", cursive;
-    font-size: 10px;
+    /* font-family: "Playwrite NL", cursive; */
+    font-size: 12px;
     color: black;
     font-weight: 600;
-   
-    
+    min-width: 150px;
+   margin-right: 2px;
+    line-height: 18px;
   }
 
   .forcast_header{
     font-family: "Playwrite NL", cursive;
     color: rgb(94, 81, 241);
+    margin-top: 1rem;
   }
   
   .weather-info h2,
@@ -122,3 +131,77 @@ body {
   .forecast-info p {
     margin: 0px 0;
   }
+
+ .favorites{
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+ }
+
+ .fav_name{
+  font-family: "Playwrite VN", cursive;
+ }
+
+ .fav_name > h2{
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+ }
+
+.favorite-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:80%;
+  height: 20vh;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.fav_lists{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid rgb(1, 32, 67);
+  border-radius: 15px;
+  width: 25%;
+  /* text-align: center; */
+  background-color: antiquewhite;
+  
+  
+}
+
+.fav_lists > p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Playwrite NL", cursive;
+  line-height: 22px;
+}
+
+.favorite-item > button{
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.favorite-item > button:hover{
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+}
